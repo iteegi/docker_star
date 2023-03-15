@@ -24,4 +24,5 @@ frontend:
 		-d \
 		--rm \
 		--name notes-frontend \
+		-v ./client/src:/app/src \
 		notes-frontend
