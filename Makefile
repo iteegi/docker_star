@@ -4,6 +4,7 @@ mongo:
 	--rm \
 	--name mongodb \
 	--network notes-net \
+	--env-file ./config/development.env \
 	-v mongo-data:/data/db \
 	mongo
 
@@ -13,6 +14,7 @@ backend:
 		--rm \
 		--name notes-backend \
 		--network notes-net \
+		--env-file ./config/development.env \
 		notes-backend
 
 frontend:
