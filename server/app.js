@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'production') {
 
 async function start() {
   try {
-    await mongoose.connect(`mongodb://172.17.0.1:27017/notes`, {
+    await mongoose.connect(`mongodb://mongodb:27017/notes`, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     })
